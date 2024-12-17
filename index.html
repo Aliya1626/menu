@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimono Sushi Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+         <!-- Language Dropdown -->
+    <div class="dropdown" id="lang-dropdown">
+        <input type="text" class="textBox" readonly value="RU"/>
+        <div class="options">
+            <div class="option" onclick="show('RU')">RU</div>
+            <div class="option" onclick="show('KZ')">KZ</div>
+            <div class="option" onclick="show('EN')">EN</div>
+        </div>
+    </div>
+    <script>// Функция для показа выбранного языка
+        function show(language) {
+            document.querySelector('.textBox').value = language;
+            document.getElementById('lang-dropdown').classList.remove('active');
+        }
+        
+        // Открытие/закрытие выпадающего меню
+        document.getElementById('lang-dropdown').addEventListener('click', function () {
+            this.classList.toggle('active');
+        });</script>
+        
+        
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Top Section -->
+        <div class="hero-section">
+            <h1 class="logo">KIMONO</h1>
+            <div class="image-container">
+                <img src="a85a456403479d31797655ebc1bb9082.jpg" alt="Sushi Menu Image">
+            </div>
+            <button class="menu-btn">Меню</button>
+        </div>
+
+        <!-- Information Section -->
+        <div class="info-section">
+            <div class="info-item">
+                <p class="icon">🕒</p>
+                <div>
+                    <p class="title">Режим работы</p>
+                    <p class="details">10:00 - 23:00</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <p class="icon">📞</p>
+                <div>
+                    <p class="title">Контакты</p>
+                    <p class="details">+7 (705) 970 4299</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <p class="icon">📍</p>
+                <div>
+                    <p class="title">Наш адрес</p>
+                    <p class="details">Алия Молдагулова 135</p>
+                </div>
+            </div>
+
+            <div class="blockInfoSocials">
+                    <a class="blockInfoSocialsItem"
+                            target="_blank"
+                            href="https://www.instagram.com/zhanabergenovaa19?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            style="background-color:rgb(243, 244, 245)"
+                    >
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect
+                                    width="26"
+                                    height="26"
+                                    rx="13"
+                                    fill="rgb(32, 32, 34)"
+                            />
+                            <path
+                                    d="M13 11C12.4696 11 11.9609 11.2107 11.5858 11.5858C11.2107 11.9609 11 12.4696 11 13C11 13.5304 11.2107 14.0391 11.5858 14.4142C11.9609 14.7893 12.4696 15 13 15C13.5304 15 14.0391 14.7893 14.4142 14.4142C14.7893 14.0391 15 13.5304 15 13C15 12.4696 14.7893 11.9609 14.4142 11.5858C14.0391 11.2107 13.5304 11 13 11Z"
+                                    fill="rgb(243, 244, 245)"
+                            />
+                            <path
+                                    d="M15.9161 6H10.0827C7.83167 6 6 7.83225 6 10.0839V15.9172C6 18.1683 7.83225 20 10.0839 20H15.9172C18.1683 20 20 18.1677 20 15.9161V10.0827C20 7.83167 18.1677 6 15.9161 6ZM13 16.5C11.0697 16.5 9.5 14.9303 9.5 13C9.5 11.0697 11.0697 9.5 13 9.5C14.9303 9.5 16.5 11.0697 16.5 13C16.5 14.9303 14.9303 16.5 13 16.5ZM17.0833 9.5C16.7613 9.5 16.5 9.23867 16.5 8.91667C16.5 8.59467 16.7613 8.33333 17.0833 8.33333C17.4053 8.33333 17.6667 8.59467 17.6667 8.91667C17.6667 9.23867 17.4053 9.5 17.0833 9.5Z"
+                                    fill="rgb(243, 244, 245)"
+                            />
+                        </svg>
+                        <div class="blockInfoSocialsItemText"
+                             style="color:rgb(32, 32, 34)">Instagram
+                        </div>
+                    </a>
+                
+                
+                    <a class="blockInfoSocialsItem"
+                            target="_blank"
+                            
+                            href="https://api.whatsapp.com/send?phone=77059704299"
+                            style="background-color:rgb(243, 244, 245)"
+                    >
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        img src="1716061309_10516.png" >
+                            <rect
+                                    width="26"
+                                    height="26"
+                                    rx="13"
+                                    fill="rgb(32, 32, 34)"
+                            />
+                            <path
+                                    d="M6.87766 16.5017L5.86426 20.2001L9.64906 19.2065L6.87766 16.5017Z"
+                                    fill="rgb(243, 244, 245)"
+                            />
+                            <path
+                                    d="M12.9998 5.80005C9.0236 5.80005 5.7998 9.02385 5.7998 13C5.7998 16.9762 9.0236 20.2 12.9998 20.2C16.976 20.2 20.1998 16.9762 20.1998 13C20.1998 9.02385 16.976 5.80005 12.9998 5.80005ZM16.5542 15.4858C16.406 15.9016 15.6776 16.3036 15.3512 16.3318C15.0218 16.3624 14.7146 16.48 13.2104 15.8878C11.396 15.1732 10.2518 13.3144 10.1624 13.1944C10.073 13.0774 9.4364 12.2284 9.4364 11.3524C9.4364 10.4734 9.8972 10.0432 10.0586 9.86445C10.223 9.68565 10.4156 9.64125 10.5356 9.64125C10.6526 9.64125 10.7726 9.64125 10.8764 9.64665C11.0048 9.64965 11.1446 9.65805 11.2784 9.95385C11.4374 10.3054 11.7836 11.1874 11.828 11.2768C11.8724 11.3662 11.9036 11.4724 11.8418 11.5894C11.783 11.7094 11.7524 11.782 11.666 11.8882C11.5766 11.9914 11.4788 12.1198 11.3978 12.1978C11.3084 12.2872 11.2166 12.385 11.3198 12.5632C11.423 12.7414 11.7806 13.3252 12.3104 13.7968C12.9914 14.4052 13.5662 14.5924 13.745 14.6818C13.9238 14.7712 14.027 14.7574 14.1302 14.6374C14.2364 14.5204 14.5766 14.1184 14.6966 13.9396C14.8136 13.7608 14.9336 13.7914 15.0956 13.8502C15.26 13.909 16.1366 14.3416 16.3154 14.431C16.4942 14.5204 16.6112 14.5648 16.6562 14.6374C16.7024 14.7124 16.7024 15.0694 16.5542 15.4858Z"
+                                    fill="rgb(243, 244, 245)"
+                            />
+                        </svg>
+                        <div class="blockInfoSocialsItemText"
+                             style="color:rgb(32, 32, 34)">WhatsApp
+                        </div>
+                    </a>
+                    <div class="blockInfoSocials">
+                        <a class="blockInfoSocialsItem"
+                                target="_blank"
+                                href="https://go.2gis.com/jo73l"
+                                style="background-color:rgb(243, 244, 245)"
+                        >
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect
+                                        width="26"
+                                        height="26"
+                                        rx="13"
+                                        fill="rgb(32, 32, 34)"
+                                />
+                                <path
+                                        d="M13 11C12.4696 11 11.9609 11.2107 11.5858 11.5858C11.2107 11.9609 11 12.4696 11 13C11 13.5304 11.2107 14.0391 11.5858 14.4142C11.9609 14.7893 12.4696 15 13 15C13.5304 15 14.0391 14.7893 14.4142 14.4142C14.7893 14.0391 15 13.5304 15 13C15 12.4696 14.7893 11.9609 14.4142 11.5858C14.0391 11.2107 13.5304 11 13 11Z"
+                                        fill="rgb(243, 244, 245)"
+                                />
+                                <path
+                                        d="M15.9161 6H10.0827C7.83167 6 6 7.83225 6 10.0839V15.9172C6 18.1683 7.83225 20 10.0839 20H15.9172C18.1683 20 20 18.1677 20 15.9161V10.0827C20 7.83167 18.1677 6 15.9161 6ZM13 16.5C11.0697 16.5 9.5 14.9303 9.5 13C9.5 11.0697 11.0697 9.5 13 9.5C14.9303 9.5 16.5 11.0697 16.5 13C16.5 14.9303 14.9303 16.5 13 16.5ZM17.0833 9.5C16.7613 9.5 16.5 9.23867 16.5 8.91667C16.5 8.59467 16.7613 8.33333 17.0833 8.33333C17.4053 8.33333 17.6667 8.59467 17.6667 8.91667C17.6667 9.23867 17.4053 9.5 17.0833 9.5Z"
+                                        fill="rgb(243, 244, 245)"
+                                />
+                            </svg>
+                            <div class="blockInfoSocialsItemText"
+                                 style="color:rgb(32, 32, 34)">2GIS
+                            </div>
+                        </a>
+                
+            </div>
+        
+    </section>
+</body>
+</html>
